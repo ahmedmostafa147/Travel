@@ -10,7 +10,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   initializeDateFormatting().then((_) => runApp(DevicePreview(
-        enabled: true,
+        enabled: false,
         builder: (context) => const Travel(), // Wrap your app
       )));
 }
