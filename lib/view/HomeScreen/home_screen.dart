@@ -4,9 +4,8 @@ import 'package:dughri/view/HomeScreen/Widget/Search_location_field.dart';
 import 'package:dughri/view/HomeScreen/Widget/custom_container_text_field.dart';
 import 'package:dughri/view/HomeScreen/Widget/list_places_stay.dart';
 import 'package:dughri/view/HomeScreen/Widget/need_a_place_location.dart';
-import 'package:dughri/view/HomeScreen/Widget/select_numder_guests.dart';
-import 'package:dughri/view/Search_page_to_select_fly_train_metro.dart/search_page_select_fly_train_metro.dart';
-import 'package:dughri/widget/Custom_Material_Buttom/custom_material.dart';
+import 'package:dughri/view/SelectTrainOrMetroOrBusScreen/search_page_select_train_bus_metro.dart';
+import 'package:dughri/widget/CustomMaterialButtom/custom_material.dart';
 import 'package:dughri/widget/Date%20Picker/data_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -144,9 +143,7 @@ class _HomeViewState extends State<HomeScreen> {
                             ],
                           ),
                           GestureDetector(
-                            onTap: () {
-                              Get.to(() => const SelectNumberGuests());
-                            },
+                            onTap: () {},
                             child: const CustomContainerTextField(
                                 hintText: "Select number of guests",
                                 iconData: FontAwesomeIcons.user),
@@ -164,9 +161,11 @@ class _HomeViewState extends State<HomeScreen> {
                   ),
                 ),
                 const NeedPlaceTextWithLocation(),
-                const Divider(
+                Divider(
                   color: Colors.grey,
+                  height: 1.sp,
                 ),
+                const CategoriesListMallika1(),
                 const ListPlacesToStay(),
               ])
         ],

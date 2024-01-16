@@ -53,7 +53,7 @@ class _MyCustomSplashScreenState extends State<MyCustomSplashScreen>
     Timer(const Duration(seconds: 4), () {
       setState(() {
         Navigator.pushReplacement(
-            context, PageTransition(const ProvidedStylesExample()));
+            context, PageTransition(const NavBar()));
       });
     });
   }
@@ -70,9 +70,20 @@ class _MyCustomSplashScreenState extends State<MyCustomSplashScreen>
     double _height = MediaQuery.of(context).size.height;
 
     return Scaffold(
-      backgroundColor: Colors.white,
       body: Stack(
         children: [
+          Opacity(
+            opacity: 0.4,
+            child: Container(
+                alignment: Alignment.center,
+                decoration: const BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage(Assets.imagesBackground),
+                    fit: BoxFit.fill,
+                  ),
+                )),
+          ),
+    
           Column(
             children: [
               AnimatedContainer(
@@ -85,7 +96,8 @@ class _MyCustomSplashScreenState extends State<MyCustomSplashScreen>
                 child: Text(
                   'DOغRY',
                   style: TextStyle(
-                    color: Colors.black,
+    
+                    color: Colors.pink,
                     fontWeight: FontWeight.bold,
                     fontSize: animation1.value,
                   ),
@@ -93,26 +105,26 @@ class _MyCustomSplashScreenState extends State<MyCustomSplashScreen>
               ),
             ],
           ),
-          Center(
-            child: AnimatedOpacity(
-              duration: const Duration(milliseconds: 2000),
-              curve: Curves.fastLinearToSlowEaseIn,
-              opacity: _containerOpacity,
-              child: AnimatedContainer(
-                duration: const Duration(milliseconds: 2000),
-                curve: Curves.fastLinearToSlowEaseIn,
-                height: _width / _containerSize,
-                width: _width / _containerSize,
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(30),
-                ),
-                // child: Image.asset('assets/images/file_name.png')
-                child: Image.asset(Assets.imagesDORY),
-              ),
-            ),
-          ),
+          // Center(
+          //   child: AnimatedOpacity(
+          //     duration: const Duration(milliseconds: 2000),
+          //     curve: Curves.fastLinearToSlowEaseIn,
+          //     opacity: _containerOpacity,
+          //     child: AnimatedContainer(
+          //       duration: const Duration(milliseconds: 2000),
+          //       curve: Curves.fastLinearToSlowEaseIn,
+          //       height: _width / _containerSize,
+          //       width: _width / _containerSize,
+          //       alignment: Alignment.center,
+          //       decoration: BoxDecoration(
+          //         color: Colors.white,
+          //         borderRadius: BorderRadius.circular(30),
+          //       ),
+          //       // child: Image.asset('assets/images/file_name.png')
+          //       child: Image.asset(Assets.imagesDORY),
+          //     ),
+          //   ),
+          // ),
         ],
       ),
     );

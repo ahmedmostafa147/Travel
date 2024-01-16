@@ -1,7 +1,7 @@
 import 'package:dughri/view/HomeScreen/Widget/custom_container_text_field.dart';
 import 'package:dughri/view/HomeScreen/home_screen.dart';
 import 'package:dughri/widget/AppBar/custom_app_bar.dart';
-import 'package:dughri/widget/Custom_Material_Buttom/custom_material.dart';
+import 'package:dughri/widget/CustomMaterialButtom/custom_material.dart';
 import 'package:dughri/widget/NavBar/nav_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -112,7 +112,7 @@ class _ShowDatePickerState extends State<ShowDatePicker> {
               onPressed: () {
                 _saveDateRange();
                 _saveDateRange().then((_) {
-                  Get.to(() => const ProvidedStylesExample());
+                  Get.to(() => const NavBar());
                 });
               },
             )

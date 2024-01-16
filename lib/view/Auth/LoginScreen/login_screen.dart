@@ -1,5 +1,5 @@
 import 'package:dughri/core/constant/images_path.dart';
-import 'package:dughri/widget/Custom_Material_Buttom/custom_material.dart';
+import 'package:dughri/widget/CustomMaterialButtom/custom_material.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -76,11 +76,17 @@ class _LoginScreenState extends State<LoginScreen> {
               ],
             ),
           ),
-           SizedBox(
+          SizedBox(
             height: 50.sp,
           ),
           const Text(
-              " By continuing you agree to our Terms of Service and Privacy Policy")
+            'By continuing you agree to our',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 14,
+              color: Colors.black,
+            ),
+          ),
         ],
       ),
     );

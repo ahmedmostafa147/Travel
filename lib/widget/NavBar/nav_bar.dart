@@ -1,19 +1,21 @@
+import 'package:dughri/view/Auth/Login/LoginView.dart';
+import 'package:dughri/view/Auth/Register/RegisterView.dart';
 import 'package:dughri/view/Booking/booking.dart';
 import 'package:dughri/view/HomeScreen/home_screen.dart';
-import 'package:dughri/view/LoginScreen/login_screen.dart';
+import 'package:dughri/view/Auth/LoginScreen/login_screen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 import 'package:flutter/material.dart';
 
-class ProvidedStylesExample extends StatefulWidget {
-  const ProvidedStylesExample({super.key});
+class NavBar extends StatefulWidget {
+  const NavBar({super.key});
 
   @override
-  _ProvidedStylesExampleState createState() => _ProvidedStylesExampleState();
+  _NavBarState createState() => _NavBarState();
 }
 
-class _ProvidedStylesExampleState extends State<ProvidedStylesExample> {
+class _NavBarState extends State<NavBar> {
   PersistentTabController? _controller;
 
   @override
@@ -25,7 +27,9 @@ class _ProvidedStylesExampleState extends State<ProvidedStylesExample> {
   List<Widget> _buildScreens() => [
         const HomeScreen(),
         const BookingHistoryOrArchived(),
-        const LoginScreen()
+        const LoginScreen(),
+        RegisterView(),
+        LoginView(),
       ];
 
   List<PersistentBottomNavBarItem> _navBarsItems() => [
@@ -53,6 +57,22 @@ class _ProvidedStylesExampleState extends State<ProvidedStylesExample> {
           activeColorPrimary: const Color.fromARGB(251, 251, 107, 108),
           inactiveColorPrimary: Colors.grey,
         ),
+         PersistentBottomNavBarItem(
+          icon: Icon(
+            Icons.person,
+            size: 30.r,
+          ),
+          activeColorPrimary: const Color.fromARGB(251, 251, 107, 108),
+          inactiveColorPrimary: Colors.grey,
+        ),
+         PersistentBottomNavBarItem(
+          icon: Icon(
+            Icons.person,
+            size: 30.r,
+          ),
+          activeColorPrimary: const Color.fromARGB(251, 251, 107, 108),
+          inactiveColorPrimary: Colors.grey,
+        ),
       ];
 
   @override
@@ -70,6 +90,6 @@ class _ProvidedStylesExampleState extends State<ProvidedStylesExample> {
         animateTabTransition: true,
       ),
       navBarStyle:
-          NavBarStyle.style5 // Choose the nav bar style with this property
+          NavBarStyle.style5 
       );
 }

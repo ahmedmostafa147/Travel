@@ -94,7 +94,7 @@ class _SearchLocationFieldState extends State<SearchLocationField> {
                 await Location.getCurrentPosition();
                 setState(() {
                   currentLocationHint;
-                  Get.to(() => const ProvidedStylesExample());
+                  Get.to(() => const NavBar());
                 });
               },
               child:  Card(
