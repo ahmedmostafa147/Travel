@@ -13,13 +13,13 @@ class UpComing extends StatefulWidget {
 class _UpComingState extends State<UpComing> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: EdgeInsets.all(8.0),
           child: Column(
             children: [
-              const CustomizableTicketContainer(
+              CustomizableTicketContainer(
                   logoImagePath: Assets.imagesCompanylogo,
                   trainNumber: '9007',
                   departureTime: '10:00 AM',

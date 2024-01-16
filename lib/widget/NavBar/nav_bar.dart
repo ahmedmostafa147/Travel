@@ -3,6 +3,7 @@ import 'package:dughri/view/Auth/Register/RegisterView.dart';
 import 'package:dughri/view/Booking/booking.dart';
 import 'package:dughri/view/HomeScreen/home_screen.dart';
 import 'package:dughri/view/Auth/LoginScreen/login_screen.dart';
+import 'package:dughri/view/Profile/pages/profile_page.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
@@ -27,9 +28,9 @@ class _NavBarState extends State<NavBar> {
   List<Widget> _buildScreens() => [
         const HomeScreen(),
         const BookingHistoryOrArchived(),
-        const LoginScreen(),
-        RegisterView(),
-        LoginView(),
+        ProfilePage(),
+        const RegisterView(),
+        const LoginView(),
       ];
 
   List<PersistentBottomNavBarItem> _navBarsItems() => [
@@ -57,7 +58,7 @@ class _NavBarState extends State<NavBar> {
           activeColorPrimary: const Color.fromARGB(251, 251, 107, 108),
           inactiveColorPrimary: Colors.grey,
         ),
-         PersistentBottomNavBarItem(
+        PersistentBottomNavBarItem(
           icon: Icon(
             Icons.person,
             size: 30.r,
@@ -65,7 +66,7 @@ class _NavBarState extends State<NavBar> {
           activeColorPrimary: const Color.fromARGB(251, 251, 107, 108),
           inactiveColorPrimary: Colors.grey,
         ),
-         PersistentBottomNavBarItem(
+        PersistentBottomNavBarItem(
           icon: Icon(
             Icons.person,
             size: 30.r,
@@ -89,7 +90,5 @@ class _NavBarState extends State<NavBar> {
       screenTransitionAnimation: const ScreenTransitionAnimation(
         animateTabTransition: true,
       ),
-      navBarStyle:
-          NavBarStyle.style5 
-      );
+      navBarStyle: NavBarStyle.style5);
 }
