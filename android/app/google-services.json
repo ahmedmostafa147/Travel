@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "358299636601",
+    "project_id": "travelapp-16f98",
+    "storage_bucket": "travelapp-16f98.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358299636601:android:1256d95b2dcf0ca708d5a8",
+        "android_client_info": {
+          "package_name": "com.example.dughri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "358299636601-1klivgcnj6kipigdg9ges61h9np9vik3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dughri",
+            "certificate_hash": "0632d5eb06f05c4fe4ed05bcc920e6b61998c960"
+          }
+        },
+        {
+          "client_id": "358299636601-j3fros9lcr7o87jh3bmo9rep4fh3i6qk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsrQ4RE73FOwHV5mJelLU6HuBBmJ3GSdQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "358299636601-j3fros9lcr7o87jh3bmo9rep4fh3i6qk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "358299636601-i12i6d5qlsdn6rh4h17uiuepip5m037t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.dughri"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

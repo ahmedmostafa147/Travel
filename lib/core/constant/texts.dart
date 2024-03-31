@@ -1,0 +1,2 @@
+const String kPriceType = "EGP";
+const String kHotelUrl = "https://www.booking.com/index.en-gb.html?aid=2311236;label=en-eg-booking-mobile-PEpwRCtNkKgyvZKSyRhKkwSM652828998706:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-65526620:lp9112388:li:dem:dm;ws=&gad_source=1&gclid=Cj0KCQiAh8OtBhCQARIsAIkWb69xQTwC3Sn04z937xPqYiqCEiMs34-KXImYxsKUpkSG5Jr97ifhQBYaAm1qEALw_wcB"; 
